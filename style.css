@@ -28,8 +28,30 @@ a {
 	color: #CCFFFF;
 }
 
+button {
+	width: 300px;
+	height: 35px;
+	border-radius: 6px;
+	border: none;
+	background-color: #444444;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	background-color: #555555;
+}
+
+button:active {
+	background-color: #666666;
+}
+
 #container {
-	height: calc(100% - 20px);
+	height: 550px;
 	width: 800px;
 	margin-left: calc(50% - 400px);
 	margin-top: 20px;
