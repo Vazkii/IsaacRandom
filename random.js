@@ -7,8 +7,6 @@ $(function() {
 		
 		$(this).html("<div class='down-text'>" + name + "</div><img src='img/" + character +".png'></img>");
 	});
-	
-	setInterval(randomize, 50);
 });
 
 $('.character-box').click(function() {
@@ -21,6 +19,7 @@ $('.character-box').click(function() {
 
 $('#select-button').click(function() {
 	randomsLeft = 20;
+	setTimeout(randomize, 0);
 });
 
 function randomize() {
@@ -36,6 +35,7 @@ function randomize() {
 	element.className = element.className + " randomized";
 	
 	--randomsLeft;
+	setTimeout(randomize, 50);
 }
 
 function rand(min, max) {
